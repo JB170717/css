@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="hwsol.css">
+     
+
+
+</head>
+<body>
+    
+    <header>
+        <div class="logo">
+            <img src="logo.jpg" alt="logo">
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <!-- position : absolute -->
+    <aside class="floating">
+        <p>TOP</p>
+    </aside>
+
+    <article>
+        <ul class="slide"><!-- overflow -->
+                <li>
+                    <img src="item01.png" alt="아이템1">
+                    <p>아이템</p>
+                </li>
+                <li>
+                    <img src="item02.png" alt="아이템2">
+                    <p>아이템</p>
+                </li>
+                <li>
+                    <img src="item03.png" alt="아이템3">
+                    <p>아이템</p>
+                </li>
+                <li>
+                    <img src="item04.png" alt="아이템4">
+                    <p>아이템</p>
+                </li>
+            </ul>
+    </article>
+        <!-- 
+        sticky는 특정높이에 도달하기 전까지는 position: static처럼 동작을 하다가, 
+        설정된 위치에 다다르면 fixed처럼 동작합니다.
+        
+        규칙
+        1.sticky는 top,bottom,left,right속성중에 하나를 반드시 필수로 지정
+        2.top속성에는 fixed되는 지점을 기록함.
+        3.부모 속성에 overflow가 있으면 안됩니다.        
+        -->
+        <article class="sub-menu">
+            <ul>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+            </ul>
+        </article>
+        <section>
+            <div class="content">
+                <img src="ipad.jpg" alt="메인이미지">
+            </div>
+            <aside class="left">
+                <img src="side01.png" alt="사이드1">
+                <img src="side02.png" alt="사이드2">
+            </aside>
+            <aside class="right">
+                <img src="side03.png" alt="사이드3">
+                <img src="side04.png" alt="사이드4">
+            </aside>
+        </section>
+</body>
+</html>
